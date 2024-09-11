@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/public/partens/Background.png);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(11, 175, 148);
+  text-shadow: 3px 3px rgb(255, 153, 0);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgb(89, 228, 77);
+  color: rgb(255, 153, 0);
+}
+
+h2 {
+  color: rgb(165, 81, 13);
+}
+
+.divider {
+  width: 50%;
+  height: 1px;
+  border-bottom: 4px solid rgba(250, 156, 5, 0.555);
+  margin: 20px auto;
+}
+
+.selected {
+  background-color: rgba(116, 116, 255, 0.315);
+}
+
+.avatar {
+  width: 260px;
+  height: 280px;
+  position: relative;
+}
+.avatar-wrapper {
+  border-radius: 40px;
+  display: inline-block;
+  border: 15px solid rgb(11, 175, 148);
+  padding: 50px;
+  position: sticky;
+  background-color: #fff;
+  top: calc(50% - 205px);
+}
+.text-center {
+  text-align: center;
+}
+.button {
+  background-color: rgb(202, 81, 25);
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.button:hover {
+  transition-duration: 0.2s;
+  background-color: rgb(139, 55, 16);
+}
+
+.button-green {
+  transition-duration: 0.2s;
+  background-color: rgb(11, 175, 134);
+}
+
+.button-green:hover {
+  transition-duration: 0.2s;
+  background-color: rgb(18, 126, 99);
+}
+.list-section {
+  max-width: 700px;
+  text-align: center;
+}
+
+.list {
+  background-color: rgba(255, 166, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  gap: 1rem;
+  border: 5px solid orange;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.selected {
+  background-color: rgba(116, 116, 255, 0.315);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: rgba(255, 137, 116, 0.315);
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 1150px) {
+  .list {
+    max-width: 700px;
+  }
+  .avatar-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar-wrapper {
+    padding: 0px;
+  }
+}
