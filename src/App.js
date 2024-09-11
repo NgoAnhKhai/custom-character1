@@ -21,7 +21,6 @@ function App() {
   const [mouth, setMouth] = useState(1);
   const [eyebrows, setEyebrows] = useState(1);
   const [glasses, setGlasses] = useState(3);
-  const [noses, setNoses] = useState(3);
   const [clothing1, setClothing1] = useState(1);
   const [clothing2, setClothing2] = useState(1);
   const [clothing3, setClothing3] = useState(1);
